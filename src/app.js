@@ -64,6 +64,8 @@ findCity.addEventListener("submit", searchedCity);
 let currentLocationButton = document.querySelector("#location");
 currentLocationButton.addEventListener("click", gps);
 
+window.addEventListener("load", gps);
+
 let currentDate = document.querySelector("#current-date");
 let now = new Date();
 let hour = now.getHours().toString().padStart(2, "0");
